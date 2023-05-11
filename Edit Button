@@ -1,0 +1,11 @@
+// Select the HTML element containing the email address
+const emailElement = document.getElementById("email");
+
+// Retrieve the current email address
+const currentEmail = emailElement.value;
+
+// Replace the wrong email address with the correct one
+const correctedEmail = currentEmail.replace("wrongemail@example.com", "correctemail@example.com");
+
+// Set the value of the HTML element to the corrected email address
+emailElement.value = correctedEmail;
